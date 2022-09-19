@@ -17,7 +17,6 @@
 #include <stdbool.h>
 #include "sdkconfig.h"
 
-#if CONFIG_TINYUSB_HID_ENABLED
 #include "esp_event.h"
 #include "class/hid/hid.h"
 #include "class/hid/hid_device.h"
@@ -76,4 +75,3 @@ public:
     static bool addDevice(USBHIDDevice * device, uint16_t descriptor_len);
 };
 
-#endif /* CONFIG_TINYUSB_HID_ENABLED */

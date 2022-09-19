@@ -14,7 +14,6 @@
 
 #pragma once
 #include "USBHID.h"
-#if CONFIG_TINYUSB_HID_ENABLED
 
 // Power Control
 #define CONSUMER_CONTROL_POWER                             0x0030
@@ -82,4 +81,3 @@ public:
     uint16_t _onGetDescriptor(uint8_t* buffer);
 };
 
-#endif

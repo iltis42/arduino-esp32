@@ -13,8 +13,6 @@
 // limitations under the License.
 #include "USBHID.h"
 
-#if CONFIG_TINYUSB_HID_ENABLED
-
 #include "USBHIDSystemControl.h"
 
 static const uint8_t report_descriptor[] = {
@@ -56,4 +54,3 @@ size_t USBHIDSystemControl::release(){
     return send(0);
 }
 
-#endif /* CONFIG_TINYUSB_HID_ENABLED */

@@ -13,8 +13,6 @@
 // limitations under the License.
 #include "USBHID.h"
 
-#if CONFIG_TINYUSB_HID_ENABLED
-
 #include "USBHIDGamepad.h"
 
 static const uint8_t report_descriptor[] = {
@@ -51,7 +49,7 @@ bool USBHIDGamepad::write(){
         .rx      = _rx,
         .ry      = _ry,
         .hat     = _hat,
-        .buttons = _buttons
+        .buttons = uint16_t(_buttons)
     };
     return hid.SendReport(HID_REPORT_ID_GAMEPAD, &report, sizeof(report));
 }
@@ -117,5 +115,3 @@ bool USBHIDGamepad::send(int8_t x, int8_t y, int8_t z, int8_t rz, int8_t rx, int
     return write();
 }
 
-
-#endif /* CONFIG_TINYUSB_HID_ENABLED */

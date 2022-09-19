@@ -1,6 +1,5 @@
 
 #include "sdkconfig.h"
-#if CONFIG_TINYUSB_ENABLED
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -123,7 +122,7 @@ static tusb_desc_device_t tinyusb_device_descriptor = {
         .bDeviceClass = 0,
         .bDeviceSubClass = 0,
         .bDeviceProtocol = 0,
-        .bMaxPacketSize0 = CFG_TUD_ENDOINT0_SIZE,
+        .bMaxPacketSize0 = CFG_TUD_ENDPOINT0_SIZE,
 
         .idVendor = 0,
         .idProduct = 0,
@@ -773,4 +772,3 @@ uint8_t tinyusb_get_free_out_endpoint(void){
     return 0;
 }
 
-#endif /* CONFIG_TINYUSB_ENABLED */

@@ -14,7 +14,6 @@
 
 #pragma once
 #include "USBHID.h"
-#if CONFIG_TINYUSB_HID_ENABLED
 
 #define SYSTEM_CONTROL_NONE         0
 #define SYSTEM_CONTROL_POWER_OFF    1
@@ -36,4 +35,3 @@ public:
     uint16_t _onGetDescriptor(uint8_t* buffer);
 };
 
-#endif

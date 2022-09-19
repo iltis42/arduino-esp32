@@ -21,7 +21,6 @@
 
 #pragma once
 #include "USBHID.h"
-#if CONFIG_TINYUSB_HID_ENABLED
 
 #define MOUSE_LEFT      0x01
 #define MOUSE_RIGHT     0x02
@@ -51,4 +50,3 @@ public:
     uint16_t _onGetDescriptor(uint8_t* buffer);
 };
 
-#endif

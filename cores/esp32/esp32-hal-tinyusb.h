@@ -15,7 +15,6 @@
 
 #include "esp32-hal.h"
 
-#if CONFIG_TINYUSB_ENABLED
 
 #ifdef __cplusplus
 extern "C" {
@@ -103,4 +102,3 @@ uint8_t tinyusb_get_free_out_endpoint(void);
 }
 #endif
 
-#endif /* CONFIG_TINYUSB_ENABLED */

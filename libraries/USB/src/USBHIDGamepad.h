@@ -14,7 +14,6 @@
 
 #pragma once
 #include "USBHID.h"
-#if CONFIG_TINYUSB_HID_ENABLED
 
 /// Standard Gamepad Buttons Naming from Linux input event codes
 /// https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h
@@ -84,4 +83,3 @@ public:
     uint16_t _onGetDescriptor(uint8_t* buffer);
 };
 
-#endif

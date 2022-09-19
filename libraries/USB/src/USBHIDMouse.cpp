@@ -20,7 +20,6 @@
 */
 #include "USBHID.h"
 
-#if CONFIG_TINYUSB_HID_ENABLED
 
 #include "USBHIDMouse.h"
 
@@ -89,4 +88,3 @@ bool USBHIDMouse::isPressed(uint8_t b){
 }
 
 
-#endif /* CONFIG_TINYUSB_HID_ENABLED */

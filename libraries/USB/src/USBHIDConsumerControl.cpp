@@ -13,7 +13,6 @@
 // limitations under the License.
 #include "USBHID.h"
 
-#if CONFIG_TINYUSB_HID_ENABLED
 
 #include "USBHIDConsumerControl.h"
 
@@ -54,4 +53,3 @@ size_t USBHIDConsumerControl::release(){
 }
 
 
-#endif /* CONFIG_TINYUSB_HID_ENABLED */

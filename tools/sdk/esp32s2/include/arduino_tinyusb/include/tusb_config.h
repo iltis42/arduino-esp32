@@ -45,7 +45,7 @@ extern "C" {
 #endif
 
 #ifndef CONFIG_TINYUSB_HID_ENABLED
-#   define CONFIG_TINYUSB_HID_ENABLED 0
+#   define CONFIG_TINYUSB_HID_ENABLED 1
 #endif
 
 #ifndef CONFIG_TINYUSB_MIDI_ENABLED

@@ -13,8 +13,6 @@
 // limitations under the License.
 #include "USBHID.h"
 
-#if CONFIG_TINYUSB_HID_ENABLED
-
 #include "esp32-hal-log.h"
 #include "USBHIDVendor.h"
 
@@ -232,5 +230,3 @@ size_t USBHIDVendor::read(uint8_t *buffer, size_t size){
 
 void USBHIDVendor::flush(void){}
 
-
-#endif /* CONFIG_TINYUSB_HID_ENABLED */

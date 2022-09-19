@@ -15,7 +15,6 @@
 #pragma once
 #include "Stream.h"
 #include "USBHID.h"
-#if CONFIG_TINYUSB_HID_ENABLED
 
 ESP_EVENT_DECLARE_BASE(ARDUINO_USB_HID_VENDOR_EVENTS);
 
@@ -64,4 +63,3 @@ public:
     void _onOutput(uint8_t report_id, const uint8_t* buffer, uint16_t len);
 };
 
-#endif

@@ -20,7 +20,6 @@
 */
 #include "USBHID.h"
 
-#if CONFIG_TINYUSB_HID_ENABLED
 
 #include "USBHIDKeyboard.h"
 
@@ -349,4 +348,3 @@ size_t USBHIDKeyboard::write(const uint8_t *buffer, size_t size) {
     return n;
 }
 
-#endif /* CONFIG_TINYUSB_HID_ENABLED */

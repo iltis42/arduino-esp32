@@ -22,7 +22,6 @@
 #pragma once
 #include "Print.h"
 #include "USBHID.h"
-#if CONFIG_TINYUSB_HID_ENABLED
 
 #include "esp_event.h"
 
@@ -137,4 +136,3 @@ public:
     void _onOutput(uint8_t report_id, const uint8_t* buffer, uint16_t len);
 };
 
-#endif
