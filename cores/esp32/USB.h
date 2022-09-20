@@ -15,10 +15,10 @@
 
 #include "sdkconfig.h"
 
-#if CONFIG_TINYUSB_ENABLED
 
 #include "esp_event.h"
 #include "USBCDC.h"
+#include "Arduino.h"
 
 #define ARDUINO_USB_ON_BOOT (ARDUINO_USB_CDC_ON_BOOT|ARDUINO_USB_MSC_ON_BOOT|ARDUINO_USB_DFU_ON_BOOT)
 
@@ -116,4 +116,3 @@ class ESPUSB {
 
 extern ESPUSB USB;
 
-#endif /* CONFIG_TINYUSB_ENABLED */

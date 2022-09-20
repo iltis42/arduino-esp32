@@ -13,7 +13,6 @@
 // limitations under the License.
 #include "USB.h"
 
-#if CONFIG_TINYUSB_ENABLED
 
 #include "pins_arduino.h"
 #include "esp32-hal.h"
@@ -354,4 +353,3 @@ const char * ESPUSB::webUSBURL(void){
 
 ESPUSB USB;
 
-#endif /* CONFIG_TINYUSB_ENABLED */
